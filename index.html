@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercícios JavaScript</title>
+<style>
+    /* Estilo CSS para o fundo preto */
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Estilo CSS para os botões */
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: purple;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* Estilo CSS para os campos de entrada */
+    input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+
+<script>
+    alert("Olá, Mundo!");
+</script>
+
+
+<button onclick="alert('Você clicou no botão!')">Clique Aqui</button>
+
+
+<script>
+    var nome = prompt("Qual é o seu nome?");
+    alert("Olá, " + nome + "!");
+</script>
+
+
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML = "Este parágrafo foi modificado pelo JavaScript.";
+</script>
+
+
+<script>
+    var numero = prompt("Digite um número:");
+    var quadrado = numero * numero;
+    alert("O quadrado de " + numero + " é " + quadrado);
+</script>
+
+<script>
+    var num1 = parseFloat(prompt("Digite o primeiro número:"));
+    var num2 = parseFloat(prompt("Digite o segundo número:"));
+    var soma = num1 + num2;
+    var multiplicacao = num1 * num2;
+    alert("A soma dos números é: " + soma + "\nA multiplicação dos números é: " + multiplicacao);
+</script>
+
+
+<script>
+    var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+    var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+    var nota3 = parseFloat(prompt("Digite a terceira nota:"));
+    var media = (nota1 + nota2 + nota3) / 3;
+    alert("A média das notas é: " + media);
+</script>
+
+
+<script>
+    var numero = parseFloat(prompt("Digite um número:"));
+    var raizQuadrada = Math.sqrt(numero);
+    var raizCubica = Math.cbrt(numero);
+    var potenciaQuadrada = Math.pow(numero, 2);
+    var potenciaCubica = Math.pow(numero, 3);
+    alert("Raiz Quadrada: " + raizQuadrada +
+          "\nRaiz Cúbica: " + raizCubica +
+          "\nPotência ao Quadrado: " + potenciaQuadrada +
+          "\nPotência ao Cubo: " + potenciaCubica);
+</script>
+
+
+<button id="clickButton">Clique Aqui</button>
+<p id="clickCount">0 cliques</p>
+<script>
+    var count = 0;
+    document.getElementById("clickButton").onclick = function() {
+        count++;
+        document.getElementById("clickCount").innerHTML = count + " clique(s)";
+    };
+</script>
+
+</body>
+</html>
